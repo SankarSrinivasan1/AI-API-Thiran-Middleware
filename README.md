@@ -49,12 +49,13 @@ Most apps don’t handle this properly.
 
 ```bash
 npm install thiranshield
-
+```
 
 ---
 
 ⚙️ Quick Start
 
+```bash
 const express = require('express');
 const ThiranShield = require('thiranshield');
 
@@ -69,7 +70,7 @@ app.post('/ai', async (req, res) => {
 });
 
 app.listen(3000);
-
+```
 
 ---
 
@@ -77,6 +78,7 @@ app.listen(3000);
 
 Every request passes through a pipeline of guards:
 
+```bash
 Request
   ↓
 Rate Limiter
@@ -90,7 +92,7 @@ Cost Tracker
 Tool Guard
   ↓
 Your API / LLM
-
+```
 
 ---
 
@@ -104,8 +106,6 @@ Sliding window approach
 
 Prevents abuse and spam
 
-
-
 ---
 
 🧨 Prompt Injection Protection
@@ -115,8 +115,6 @@ Detects suspicious patterns
 Flags or blocks malicious prompts
 
 Lightweight but effective
-
-
 
 ---
 
@@ -128,8 +126,6 @@ Prevents oversized payloads
 
 Hooks for output/token limits
 
-
-
 ---
 
 💸 Cost Protection
@@ -140,8 +136,6 @@ Tracks per-user usage
 
 Hard cutoff when limits are exceeded
 
-
-
 ---
 
 🛠️ Tool Usage Guard
@@ -149,8 +143,6 @@ Hard cutoff when limits are exceeded
 Limits number of tool/function calls
 
 Prevents recursive agent loops
-
-
 
 ---
 
@@ -167,13 +159,13 @@ Violations
 
 Easy to plug into any logging system.
 
-
 ---
 
 ⚙️ Configuration
 
 Default config works out of the box, but you can customize:
 
+```bash
 app.use(ThiranShield({
   rateLimit: {
     windowMs: 60 * 1000,
@@ -190,12 +182,13 @@ app.use(ThiranShield({
   },
   promptBlock: true
 }));
-
+```
 
 ---
 
 📊 Example Logs
 
+```bash
 {
   "type": "request",
   "ip": "127.0.0.1",
@@ -208,20 +201,20 @@ app.use(ThiranShield({
   "reason": "Rate limit exceeded",
   "ip": "127.0.0.1"
 }
-
+```
 
 ---
 
 🧩 How it fits
 
 Without ThiranShield:
-
+```bash
 User → API → LLM → 💸 Surprise bill
-
+```
 With ThiranShield:
-
+```bash
 User → ThiranShield → API → LLM → ✅ Controlled + Safe
-
+```
 
 ---
 
@@ -238,7 +231,6 @@ Internal AI tools
 
 If users can send prompts → you need this.
 
-
 ---
 
 🧠 Design Philosophy
@@ -250,7 +242,6 @@ Practical > Perfect
 Works in 5 minutes > “Enterprise-ready” nonsense
 
 
-
 ---
 
 ⚠️ Current Limitations
@@ -260,8 +251,6 @@ In-memory storage (not distributed)
 Token estimation is approximate
 
 Basic pattern-based prompt detection
-
-
 
 ---
 
@@ -275,21 +264,17 @@ Streaming support
 
 OpenTelemetry integration
 
-
-
 ---
 
 🤝 Contributing
 
 PRs welcome. Keep it simple. Keep it practical.
 
-
 ---
 
 📄 License
 
 MIT
-
 
 ---
 
