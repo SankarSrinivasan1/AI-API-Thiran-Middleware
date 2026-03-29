@@ -53,7 +53,7 @@ npm install thiranshield
 
 ---
 
-⚙️ Quick Start
+## ⚙️ Quick Start
 
 ```bash
 const express = require('express');
@@ -74,7 +74,7 @@ app.listen(3000);
 
 ---
 
-🧠 What it does (Under the hood)
+## 🧠 What it does (Under the hood)
 
 Every request passes through a pipeline of guards:
 
@@ -96,7 +96,7 @@ Your API / LLM
 
 ---
 
-🔐 Features
+## 🔐 Features
 
 🚦 Rate Limiting
 
@@ -108,7 +108,7 @@ Prevents abuse and spam
 
 ---
 
-🧨 Prompt Injection Protection
+## 🧨 Prompt Injection Protection
 
 Detects suspicious patterns
 
@@ -118,7 +118,7 @@ Lightweight but effective
 
 ---
 
-📏 Input & Output Control
+## 📏 Input & Output Control
 
 Max input size enforcement
 
@@ -128,7 +128,7 @@ Hooks for output/token limits
 
 ---
 
-💸 Cost Protection
+## 💸 Cost Protection
 
 Estimates token usage per request
 
@@ -138,7 +138,7 @@ Hard cutoff when limits are exceeded
 
 ---
 
-🛠️ Tool Usage Guard
+## 🛠️ Tool Usage Guard
 
 Limits number of tool/function calls
 
@@ -146,7 +146,7 @@ Prevents recursive agent loops
 
 ---
 
-📊 Logging & Monitoring
+## 📊 Logging & Monitoring
 
 Structured logs for:
 
@@ -161,7 +161,7 @@ Easy to plug into any logging system.
 
 ---
 
-⚙️ Configuration
+## ⚙️ Configuration
 
 Default config works out of the box, but you can customize:
 
@@ -186,7 +186,7 @@ app.use(ThiranShield({
 
 ---
 
-📊 Example Logs
+## 📊 Example Logs
 
 ```bash
 {
@@ -205,7 +205,7 @@ app.use(ThiranShield({
 
 ---
 
-🧩 How it fits
+## 🧩 How it fits
 
 Without ThiranShield:
 ```bash
@@ -218,7 +218,7 @@ User → ThiranShield → API → LLM → ✅ Controlled + Safe
 
 ---
 
-🎯 Who is this for?
+## 🎯 Who is this for?
 
 AI SaaS builders
 
@@ -233,7 +233,7 @@ If users can send prompts → you need this.
 
 ---
 
-🧠 Design Philosophy
+## 🧠 Design Philosophy
 
 Simple > Clever
 
@@ -244,7 +244,7 @@ Works in 5 minutes > “Enterprise-ready” nonsense
 
 ---
 
-⚠️ Current Limitations
+## ⚠️ Current Limitations
 
 In-memory storage (not distributed)
 
@@ -254,7 +254,7 @@ Basic pattern-based prompt detection
 
 ---
 
-🔜 Roadmap
+## 🔜 Roadmap
 
 Redis support for scaling
 
@@ -266,21 +266,27 @@ OpenTelemetry integration
 
 ---
 
-🤝 Contributing
+## 🤝 Contributing
 
 PRs welcome. Keep it simple. Keep it practical.
 
 ---
 
-📄 License
+## 📄 License
 
 MIT
 
 ---
 
-💬 Final Thought
+## 💬 Final Thought
 
 You don’t notice missing security…
 until your API bill arrives.
 
 ThiranShield.js is that quiet layer that prevents regret.
+
+---
+
+## Warning 
+
+This is for educational purpose only. Not a complete product. 
