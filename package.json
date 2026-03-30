@@ -1,0 +1,12 @@
+{
+  "name": "thiranshield",
+  "version": "1.0.0",
+  "description": "A tiny guard for AI applications",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/shield.test.js"
+  },
+  "keywords": ["ai security", "prompt injection", "llm safety"],
+  "license": "MIT"
+}
