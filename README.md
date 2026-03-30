@@ -114,7 +114,11 @@ This library stays small on purpose.
 /src        core logic
 /examples   usage examples
 /tests      basic test cases
-'''
+```
+
+## Contributing
+If you find something unsafe that this does not catch, add it. If something feels too complex, simplify it.
+
 ---
 
 ## Warning 
