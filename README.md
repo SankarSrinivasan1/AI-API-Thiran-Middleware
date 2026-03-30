@@ -47,7 +47,23 @@ Install:
 ```bash
 npm install thiranshield
 ```
+---
 
+Use:
+
+```bash
+import { shield } from "thiranshield";
+
+const result = await shield({
+  input: userInput,
+  output: aiOutput,
+  tool: toolCall
+});
+
+if (!result.safe) {
+  console.log(result.reason);
+}
+```
 ---
 
 ## Warning 
