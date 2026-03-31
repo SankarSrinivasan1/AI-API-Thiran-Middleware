@@ -1,3 +1,7 @@
+# GitHub companion repository for book titled:
+![API Security for AI Applications](https://github.com/SankarSrinivasan1/API-Security-for-AI-Applications/blob/main/images/file_00000000a2e0720b9c687ca337e6a239.png)
+---
+
 # AI-API-Thiran-Middleware
 
 # 🛡️ ThiranShield.js  
